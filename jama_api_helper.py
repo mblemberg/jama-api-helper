@@ -93,7 +93,7 @@ class JamaInterface:
 class JamaItem:
     """Represents an item in Jama."""
 
-    def __init__(self, response: object = None):
+    def __init__(self, response: object = None) -> object:
         response_json = response.json()
         data = response_json['data'][0]
 
@@ -103,7 +103,7 @@ class JamaItem:
         self.project_id = data['project']
         self.fields: dict = data['fields']
 
-    def __str__(self):
+    def __str__(self) -> str:
         """String representation of the JamaItem."""
 
         items = [
@@ -119,7 +119,7 @@ class JamaItem:
 
         return '\n'.join(items)
 
-    def print_fields(self):
+    def print_fields(self) -> None:
         """Pretty prints the self.fields dictionary."""
 
         pprint(self.fields)
