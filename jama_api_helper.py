@@ -65,7 +65,7 @@ class JamaInterface:
                 'Tried to access Jama items without first authenticating.')
 
         if item_global_id is not None:
-            req = requests.get(
+            response = requests.get(
                 url=self.endpoint_url + '/abstractitems',
                 params={
                     'documentKey': item_global_id
@@ -73,7 +73,7 @@ class JamaInterface:
             )
 
         elif project_id is not None and item_project_id is not None:
-            req = requests.get(
+            response = requests.get(
                 url=self.endpoint_url + '/abstractitems',
                 params={
                     'documentKey': item_project_id,
@@ -87,7 +87,7 @@ class JamaInterface:
         else:
             raise RuntimeError('Error:  Item insufficiently defined.')
 
-        return JamaItem(req)
+        return JamaItem(response)
 
 
 class JamaItem:
