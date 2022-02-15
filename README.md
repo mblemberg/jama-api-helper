@@ -28,6 +28,12 @@ Retrieve an item from Jama by specifying the project ID and item ID
 item = jama.get_item(project_id=128, item_project_id='MY-REQ-101')
 ```
 
+Alternatively, retrieve an item from Jama by specifying the global ID for the item
+
+```python
+item = jama.get_item(global_id='GID-101')
+```
+
 Print a string representation of the Jama item
 
 ```python
