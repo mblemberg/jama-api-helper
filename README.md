@@ -1,4 +1,4 @@
-# Jama API for Python
+# Jama API Helper for Python
 
 A helper class for working with the public REST API for Jama. API documentation [here](https://dev.jamasoftware.com/api/).
 
