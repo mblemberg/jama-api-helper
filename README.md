@@ -8,6 +8,13 @@ Only standard python 3 modules.
 
 ## Usage
 
+Import classes. Optionally, import your credentials from a separate python module.
+
+```python
+from jama_api_helper import JamaInterface, JamaItem
+from secrets import jama_client_id, jama_client_secret
+```
+
 Create a JamaInterface object by specifying the API endpoint URL for your specific cloud instance.
 
 ```python
