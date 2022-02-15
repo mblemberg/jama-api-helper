@@ -1,5 +1,7 @@
 # Jama API for Python
 
+A helper class for working with the public REST API for Jama. API documentation [here](https://dev.jamasoftware.com/api/).
+
 ## Dependencies
 
 Only standard python 3 modules.
